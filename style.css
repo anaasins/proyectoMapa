@@ -1,0 +1,16 @@
+fieldset{
+  width: 300px;
+  background-color: lightgrey;
+  border: 3px solid darkblue;
+}
+legend{
+  font-weight: bold;
+  color: darkblue;
+}
+form{
+  text-align: center;
+  position: absolute;
+  top: 20%;
+  left: 37%;
+  font-weight: bold;
+}

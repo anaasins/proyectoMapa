@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Formulario opciones mapa</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="formulario.js"></script>
+  </head>
+  <body>
+    <script type="text/javascript">
+      if (localStorage.pagina != undefined) {
+        window.location='mapa.html';
+      }
+    </script>
+    <form action="#" method="post" onsubmit="datos();">
+      <fieldset>
+        <legend>OPCIONES DEL MAPA</legend>
+        Latitud: <br>
+        <input type="text" name="latitud" id="latitud"><br><br>
+        Longitud: <br>
+        <input type="text" name="longitud" id="longitud"><br><br>
+        Tipo de mapa: <br>
+        <select class="tipo" name="tipo" id="tipo">
+          <option value="SATELLITE">Satellite</option>
+          <option value="ROADMAP">Roadmap</option>
+          <option value="HYBRID">Hybrid</option>
+          <option value="TERRAIN">Terrain</option>
+        </select>
+        <br><br>
+        Titulo para el puntero: <br>
+        <input type="text" name="titulo" id="titulo"><br><br>
+        <input type="submit" name="submit" value="Mostrar">
+      </fieldset>
+    </form>
+  </body>
+</html>
