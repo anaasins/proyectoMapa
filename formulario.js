@@ -27,7 +27,7 @@ function mapa() {
     var opciones = {
       zoom: 15,
       center: coordenadas,
-      mapTypeId: google.maps.MapTypeId.tipo
+      mapTypeId: tipo
     };
 
     //creamos un objeto mapa de google con el div y las opciones
